@@ -16,4 +16,4 @@ args = arg_parser.parse_args()
 for sequence_record in parse(args.pathToFASTA, 'fasta'):
     print('Sequence ID: {}'.format(sequence_record.id))
     print('Sequence: {}'.format(repr(sequence_record.seq)))
-    print('GC-content: {} %'.format(100 * GC(sequence_record.seq))
+    print('GC-content: {} %'.format(100 * GC(sequence_record.seq)))
